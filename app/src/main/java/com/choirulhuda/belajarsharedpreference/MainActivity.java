@@ -32,7 +32,7 @@ import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    private SharedPreferences sharedPref;
+    //private SharedPreferences sharedPref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.getMenu().getItem(0).setChecked(true);
 
         //membuat shared preference baru
-        sharedPref = getApplicationContext().getSharedPreferences("LOGIN_PREFERENCE",
+        SharedPreferences sharedPref = getApplicationContext().getSharedPreferences("LOGIN_PREFERENCE",
                 Context.MODE_PRIVATE);
     }
 

@@ -95,7 +95,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
                 } else {
                     if (!pref.getString("LOGIN_PREF", "").isEmpty()){
                         editor = pref.edit();
-                        editor.putString("LOGIN_PREF", "");
+                        editor.remove("LOGIN_PREF");
                         editor.apply();
                     }
                 }
